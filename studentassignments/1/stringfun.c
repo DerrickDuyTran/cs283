@@ -208,7 +208,7 @@ int main(int argc, char *argv[]){
     if (user_str_len < 0){
         printf("Error setting up buffer, error = %d", user_str_len);
         exit(2);
-    }
+    } 
 
     switch (opt){
         case 'c':
@@ -228,6 +228,11 @@ int main(int argc, char *argv[]){
 
         case 'w':
             word_print(buff, user_str_len);
+            break;
+
+        case 'x':
+            printf("Not Implemented!\n");
+            exit(1);
             break;
 
         default:
