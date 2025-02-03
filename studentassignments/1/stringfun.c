@@ -46,10 +46,6 @@ int setup_buff(char *buff, char *user_str, int len){
         return -1; 
     }
 
-    //removes trailing space
-    if (i > 0 && buff[i - 1] == ' ') {
-        i--;
-    }
 
     //populates rest of string with '.'
     while (i < len) {
